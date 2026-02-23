@@ -169,6 +169,9 @@ buildlistsize=0            # Used to assess if files got built
 DBBLogger=""
 zAppBuildVerbose=""
 HELP=$1
+dbbMetadataStoreJdbcUrl="${DBB_METADATA_STORE_JDBC_URL:-}"
+dbbMetadataStoreJdbcId="${DBB_METADATA_STORE_JDBC_ID:-}"
+dbbMetadataStoreJdbcPwdFile="${DBB_METADATA_STORE_JDBC_PWD_FILE:-}"
 
 if [ "$HELP" = "?" ]; then
     Help
